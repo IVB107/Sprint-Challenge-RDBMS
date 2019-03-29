@@ -12,8 +12,11 @@ addAction = action => {
     .then(ids => findById(ids[0]));
 }
 
+const getActions = () => db('Actions');
+
 
 module.exports = {
   findById,
-  addAction
+  addAction,
+  getActions
 }
